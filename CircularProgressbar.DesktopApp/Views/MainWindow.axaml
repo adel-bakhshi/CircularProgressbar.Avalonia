@@ -1,0 +1,25 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:CircularProgressbar.DesktopApp.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:cc="using:CircularProgressbar.DesktopApp.CustomControls"
+        mc:Ignorable="d"
+        d:DesignWidth="800"
+        d:DesignHeight="450"
+        x:Class="CircularProgressbar.DesktopApp.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="CircularProgressbar.DesktopApp">
+
+    <!-- Main content -->
+    <Grid>
+        <cc:CircularProgressbar ProgressSize="400"
+                                ProgressThickness="20"
+                                Progress="57"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                BorderBrush="Aqua"
+                                Background="Crimson" />
+    </Grid>
+</Window>
